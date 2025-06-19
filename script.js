@@ -27,3 +27,23 @@ let loading = setInterval(() => {
     }, 1000);
   }
 }, 30); // speed
+
+const toggle = document.getElementById("themeToggle");
+const root = document.documentElement;
+
+// Load previous theme
+if (localStorage.getItem("theme") === "dark") {
+  root.setAttribute("data-theme", "dark");
+  toggle.checked = true;
+}
+
+// Toggle theme
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    root.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    root.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
+});
