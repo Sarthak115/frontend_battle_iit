@@ -47,3 +47,80 @@ toggle.addEventListener("change", () => {
     localStorage.setItem("theme", "light");
   }
 });
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    const ripple = document.createElement("span");
+    ripple.classList.add("ripple");
+
+    const rect = btn.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+
+    btn.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+document.querySelectorAll(".cta-btn, button").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    const ripple = document.createElement("span");
+    ripple.classList.add("ripple");
+
+    const rect = btn.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+
+    btn.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+document.querySelectorAll(".cta-btn, .product-card button").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    const ripple = document.createElement("span");
+    ripple.classList.add("ripple");
+
+    const rect = btn.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+
+    btn.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+
+document.querySelectorAll(".cta-btn, .product-card button, .ripple-link").forEach(btn => {
+  // same ripple logic
+  btn.addEventListener("click", function (e) {
+    const ripple = document.createElement("span");
+    ripple.classList.add("ripple");
+
+    const rect = btn.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+
+    btn.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+ window.addEventListener('DOMContentLoaded', () => {
+    const intro = document.getElementById('intro-split');
+    const testimonial = document.getElementById('testimonial-section');
+    const scroll = document.getElementById('testimonial-scroll');
+
+    // Reveal testimonial after animation
+    setTimeout(() => {
+      testimonial.style.opacity = '1';
+      scroll.style.animationPlayState = 'running';
+    }, 3000); // Wait for text to slide out
+  });

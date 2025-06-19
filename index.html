@@ -9,10 +9,13 @@
 <body>
   <header>
     <nav class="navbar">
+        
       <div class="logo">Thekua Junction</div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <!-- <li><a href="products.html">Products</a></li> -->
+        <li><a href="products.html" class="ripple-link">Products</a></li>
+
         <li><a href="about.html">About</a></li>
         <li><a href="order.html">Order</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -24,7 +27,7 @@
     </nav>
   </header>
  <!-- Loader Screen -->
-  <div class="loader">
+  <!-- <div class="loader">
     <div class="loader-left"></div>
     <div class="loader-right"></div>
     <div class="loader-content">
@@ -33,7 +36,7 @@
         <div class="progress-fill"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <main>
     <section class="hero">
@@ -46,32 +49,27 @@
 <section class="hero-keywords-line">
   <div class="keyword-item">
     <span>Traditional Taste</span>
-    <div class="image-gallery">
-      <img src="images/thekua.jpg" alt="Thekua 1">
-      <img src="images/thekua2.jpg" alt="Thekua 2">
-      <img src="images/thekua3.jpg" alt="Thekua 3">
-    </div>
+    <img class="float-img img1" src="images/thekua.jpg" alt="Thekua 1">
+    <img class="float-img img2" src="images/thekua2.jpg" alt="Thekua 2">
+    <img class="float-img img3" src="images/thekua3.jpg" alt="Thekua 3">
   </div>
 
   <div class="keyword-item">
     <span>Pure Ingredients</span>
-    <div class="image-gallery">
-      <img src="images/jaggery.jpg" alt="Jaggery">
-      <img src="images/wheat.jpg" alt="Wheat">
-      <img src="images/coconut.jpg" alt="Coconut">
-    </div>
+    <img class="float-img img1" src="images/wheat.jpg" alt="Wheat">
+    <img class="float-img img2" src="images/jaggery.jpg" alt="Jaggery">
+    <img class="float-img img3" src="images/coconut.jpg" alt="Coconut">
   </div>
 
   <div class="keyword-item">
     <span>Handmade with Love</span>
-    <div class="image-gallery">
-      <img src="images/handmade1.jpg" alt="Making Thekua">
-      <img src="images/handmade2.jpg" alt="Prep">
-      <img src="images/handmade3.jpg" alt="Final Touch">
-    </div>
+    <img class="float-img img1" src="images/handmade1.jpg" alt="Prep 1">
+    <img class="float-img img2" src="images/handmade2.jpg" alt="Prep 2">
+    <img class="float-img img3" src="images/handmade3.jpg" alt="Prep 3">
   </div>
 </section>
 
+<button class="cta-btn">Order Now</button>
  </section>
 
 
@@ -89,6 +87,52 @@
         <!-- Add more product cards here -->
       </div>
     </section>
+
+  <section class="testimonial-wrapper">
+  <div class="intro-split-overlay" id="intro-split">
+    <span class="left-text">Happy customers</span>
+    <span class="right-text">over there →</span>
+  </div>
+<section class="testimonial-section">
+  <h2>What Our Users Say</h2>
+  <div class="testimonial-scroll">
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card diagonal-left">
+      <div class="testimonial-text">
+        <p>"This platform has truly transformed how I farm. The product recommendations are spot on!"</p>
+        <h4>- Ravi Kumar</h4>
+      </div>
+      <div class="testimonial-img">
+        <img src="images/human1.jpg" alt="Ravi Kumar">
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card diagonal-right">
+      <div class="testimonial-img">
+        <img src="images/human2.jpg" alt="Priya Sharma">
+      </div>
+      <div class="testimonial-text">
+        <p>"The customer support and detailed guidance are exceptional. I highly recommend this site."</p>
+        <h4>- Priya Sharma</h4>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card diagonal-left">
+      <div class="testimonial-text">
+        <p>"Affordable and reliable products delivered on time — exactly what a farmer needs."</p>
+        <h4>- Sunil Verma</h4>
+      </div>
+      <div class="testimonial-img">
+        <img src="images/human3.jpg" alt="Sunil Verma">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- <section id="about" class="section">
       <h2>About Us</h2>
